@@ -2,11 +2,12 @@
 string number = Convert.ToString(Console.ReadLine());
 char[] s = number.ToCharArray();
 Array.Reverse(s);
-if (Convert.ToString(s) == number)
+string checkout = new string(s);
+if (number == checkout)
 {
-    Console.WriteLine("Число является палиндромом");
+  Console.WriteLine("число является палиндромом");  
 }
-else
+else if (number != checkout)
 {
-    Console.WriteLine("Число не является палиндромом");
+    Console.WriteLine("число не является палиндромом");
 }
